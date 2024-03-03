@@ -2,13 +2,14 @@
 
 namespace ServiceScope.Services
 {
-    public interface ITransientService : IService { }
 
-    public class TransientService : ITransientService
+    public interface ITransientService1 : IService { }
+
+    public class TransientService1 : ITransientService1
     {
         private string _guid;
 
-        public TransientService(ISingletonService1 singleton1,IScopedService1 scoped1, ITransientService1 transient1)
+        public TransientService1(/*ISingletonService1 singleton1*/ /*,IScopedService1 scoped1*/)
         {
             _guid = Guid.NewGuid().ToString();
         }

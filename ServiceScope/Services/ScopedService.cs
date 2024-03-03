@@ -8,7 +8,7 @@ namespace ServiceScope.Services
     {
         private string _guid;
 
-        public ScopedService()
+        public ScopedService(ISingletonService1 singleton1, IScopedService1 scoped1, ITransientService1 transient1)
         {
             _guid = Guid.NewGuid().ToString();
         }
